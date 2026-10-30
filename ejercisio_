@@ -1,0 +1,30 @@
+Algoritmo ejercios_4
+	//4. Análisis de Calificaciones de un Grupo Un docente necesita procesar las notas definitivas
+	//de 5 estudiantes. Mediante un ciclo Para, solicitar cada una de las 5 notas (entre 1 y 10) 
+   //e indicar al final cuántos alumnos aprobaron (nota 6), cuántos desaprobaron y cuál fue la nota promedio general.
+	
+
+	Definir nota como entero;
+	suma=0;
+	aprovados=0;
+	reprovados=0;
+	Para i=1     hasta 5     hacer
+		
+		Escribir "ingrese las cinco notas de cada estudiamte";
+		
+		Leer nota;
+		suma=suma+i;
+		si nota>=6 entonces
+			aprovados=aprovados+1;
+			
+		SiNo
+			reprovados=reprovados+1;
+		FinSi
+		
+	FinPara
+	Escribir"la cantidad de alumnos aprovados son.",aprovados;
+	Escribir "loa cantidad de alumnos reprovados son:",reprovados;
+	promedio=suma/5;
+Escribir "el promedio general es :",promedio;
+	
+FinAlgoritmo
